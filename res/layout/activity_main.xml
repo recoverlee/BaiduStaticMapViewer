@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+	android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".BaiduMapViewActivity" 
+    >
+      
+    <LinearLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#000000"
+        >
+          <ImageView
+        	android:id="@+id/map_view"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent">
+    	</ImageView>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        
+        
+        <LinearLayout
+    	    android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+    	    android:orientation="horizontal"
+        	android:layout_weight="1">
+        	
+            <TextView 
+              android:text="Zoom" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:gravity="center"
+              android:layout_weight="1"
+              /> 
+    		
+    		<EditText
+    		  android:id="@+id/zoom" 
+              android:layout_height="wrap_content" 
+              android:layout_width="wrap_content"
+              android:layout_weight="1"
+              />
+        	
+            <TextView 
+              android:text="Width" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:gravity="center"
+              android:layout_weight="1"
+              /> 
+    		
+    		<EditText
+    		  android:id="@+id/width" 
+              android:layout_height="wrap_content" 
+              android:layout_width="wrap_content"
+              android:layout_weight="1"
+              /> 
+              
+    		<TextView 
+    		  android:text="Height" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_weight="1" 
+              /> 
+    		
+    		<EditText 
+    		  android:id="@+id/height"
+              android:layout_height="wrap_content" 
+              android:layout_width="wrap_content"
+              android:layout_weight="1"
+              />
+        
+	    </LinearLayout>
+	    
+         <LinearLayout
+    	    android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+    	    android:orientation="horizontal"
+        	android:layout_weight="1"
+        	>
+        	
+            <TextView 
+              android:text="Longitude" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:layout_weight="0.25"
+              android:gravity="center"
+              /> 
+    		
+    		<EditText
+    		  android:id="@+id/lng" 
+              android:layout_height="wrap_content" 
+              android:layout_width="wrap_content"
+              android:layout_weight="0.25"
+              /> 
+              
+    		<TextView 
+    		  android:text="Latitude" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:layout_weight="0.25"
+              android:gravity="center"
+              /> 
+    		
+    		<EditText 
+    		  android:id="@+id/lat"
+              android:layout_height="wrap_content" 
+              android:layout_width="wrap_content"
+              android:layout_weight="0.25"
+              
+              />
+        
+	    </LinearLayout>
+	    
+           <LinearLayout
+    	    android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+    	    android:orientation="horizontal"
+        	android:layout_weight="1">
+    		
+             <TextView 
+    		  android:text="markerSize" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:layout_weight="1"
+              android:gravity="center"
+              /> 
+        	
+            <Spinner
+         	 android:id="@+id/spin_marker_size"
+         	 android:layout_width="wrap_content"
+         	 android:layout_height="wrap_content"
+         	 android:prompt="@string/marker_size_name"
+         	 />
+    
+            <TextView 
+    		  android:text="markerColor" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content" 
+              android:layout_weight="1"
+              android:gravity="center"
+              /> 
+            
+    		<Spinner
+         	 android:id="@+id/spin_marker_color"
+         	 android:layout_width="wrap_content"
+         	 android:layout_height="wrap_content"
+         	 android:prompt="@string/marker_color_name"
+         	 />    		
+        
+	    </LinearLayout>
+	    
+             <LinearLayout
+       		 android:id="@+id/test"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	>
+          <Button
+              android:id="@+id/refresh"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="Refresh"
+              android:onClick="onRefresh"
+              
+               />
+        
+    </LinearLayout>
+         
+    </LinearLayout>
+    
+  
+    
+
+</LinearLayout>
